@@ -30,6 +30,6 @@ jobs:
         terraform apply -auto-approve \
           -var resource_group_name="nl_rg_tp" \
           -var location="France Central" \
-          -var resources_suffix="mfo-nfs-2022" \
+          -var resources_suffix="nl_rg_tp" \
           -var sql_administrator_login=${{ secrets.sql_admin_login }} \
           -var sql_administrator_password=${{ secrets.sql_admin_password }}
