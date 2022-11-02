@@ -7,12 +7,12 @@ terraform {
     resource_group_name  = "rg-lab"
     storage_account_name = "samfonfs2022"
     container_name       = "tfstate"
-    key                  = "nl_rg_tp.tfstate"
+    key                  = "nl-rg-tp.tfstate"
   }
 }
 
 resource "azurerm_resource_group" "example" {
-  name     = "nl_rg_tp"
+  name     = "nl-rg-tp"
   location = var.location
 }
 #Database

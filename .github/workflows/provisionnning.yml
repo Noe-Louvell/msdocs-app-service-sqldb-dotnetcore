@@ -28,7 +28,7 @@ jobs:
         cd terraform
         terraform init
         terraform apply -auto-approve \
-          -var resource_group_name="nl_rg_tp" \
+          -var resource_group_name="nl-rg-tp" \
           -var location="France Central" \
           -var resources_suffix="nl_rg_tp" \
           -var sql_administrator_login=${{ secrets.sql_admin_login }} \
